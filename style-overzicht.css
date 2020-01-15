@@ -1,0 +1,472 @@
+/*Selecteer alle code en haal de standaard margin weg*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    background: #FCFCFC;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    max-width: 300em;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*HEADER*/
+
+.knop-iconen {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: calc(100% - 3em);
+    max-width: 40em;
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    .knop-iconen {
+        max-width: 1200px;
+    }
+}
+
+
+/*ZOEKEN*/
+
+.search-icon {
+    position: absolute;
+    width: 20px;
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+fieldset {
+    border: none;
+    margin: 0em 1.5em;
+    padding-top: 0.5em;
+}
+
+fieldset legend {
+    color: #5A5A5A;
+    padding-top: 1em;
+    font-weight: bold;
+    animation-name: noticeMe;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+
+#input-text {
+    border: 0;
+    color: grey;
+    padding: 0.8em;
+    margin-right: 1.2em;
+    width: calc(100% - 6.1em);
+    max-width: 35em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+input:required:valid:focus {
+    border: 1px solid greenyellow !important;
+}
+
+input:required:invalid:focus {
+    border: 1px solid red !important;
+}
+
+#submit-knop {
+    background-color: rgb(179, 32, 145);
+    padding: 1.2em;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+header {
+    margin-top: -6rem;
+    transition: margin-top 500ms;
+    border: none;
+}
+
+header > form {
+    height: 6rem;
+    background-color: #E6E6E6;
+}
+
+header.show-form {
+    margin-top: 0;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    fieldset {
+        margin: 0 auto;
+        justify-content: space-around;
+        width: calc(100% - 3em);
+        max-width: 40em;
+    }
+}
+
+/*ICONEN*/
+
+#back-button {
+    width: 3em;
+    margin-top: 1.3em;
+}
+
+#zoeken {
+    width: 5em;
+    height: 7em;
+}
+
+#my-profile {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    margin-top: 1.3em;
+}
+
+
+/*TITEL EN BUTTONS*/
+
+.titleAndButtons-container {
+    margin: 0 auto;
+    width: calc(100% - 3em);
+    max-width: 40em;
+    color: #363636;
+}
+
+.titleAndButtons-container h1 {
+    font-size: 9vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    .titleAndButtons-container h1 {
+        font-size: 6vw;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    .titleAndButtons-container h1 {
+        font-size: 4em;
+    }
+}
+
+
+/*SORTING BUTOTNS*/
+
+.buttons {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 40em;
+    border-bottom: solid 1px lightgrey;
+    padding-bottom: 2em;
+}
+
+.sort-button {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    padding: 1em;
+    background-color: #B32091;
+    border: none;
+    border-radius: 10em;
+}
+
+.sort-button:active {
+    background-color: #DB31BB;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    .sort-button {
+        font-size: 1em;
+    }
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    .sort-button {
+        font-size: 1em;
+    }
+}
+
+
+/*STORIES*/
+
+section {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: calc(100% - 3em);
+    max-width: 40em;
+}
+
+section a article {
+    padding: 1em;
+    margin-bottom: 2em;
+    list-style: none;
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    -webkit-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+    max-width: 40em;
+    padding-bottom: 70px;
+}
+
+article > p {
+    display: block;
+    position: absolute;
+    max-width: 80%;
+    margin-top: 1em;
+    color: #ACACAC;
+    font-size: 0.8em;
+}
+
+article:hover {
+    transition: all .3s;
+    transform: translate(0, -5px);
+}
+
+section a article a {
+    display: flex;
+    justify-content: space-between;
+}
+
+article > div {
+    display: flex;
+    position: relative;
+}
+
+article > div > img {
+    width: 3em;
+    height: 3em;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.verhaal-titel-likes {
+    margin-left: 3.7em;
+}
+
+.verhaal-likes {
+    display: flex;
+    align-items: center;
+    margin-top: 0.3em;
+}
+
+
+/*Likes nummer*/
+div p {
+    margin-left: 0.5em;
+    color: #D3D3D3;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+section a article h2 {
+    color: #2e2e1f;
+    font-size: 1em;
+}
+
+section a article .hearticon {
+    width: 1.4em;
+    display: block;
+}
+
+section a article .download-button {
+    border-radius: 100%;
+    width: 3em;
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.verhaal-nummer {
+    font-size: 2em;
+    position: absolute;
+    margin-left: 1.9em;
+    margin-top: 0.1em;
+    color: #363636;
+    font-weight: 600;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    section a article {
+        padding: 1em;
+        padding-bottom: 5em;
+    }
+
+    article > p {
+        max-width: 37em;
+        font-size: 1em;
+        font-weight: 100;
+    }
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    section a article {
+        padding: 1em;
+        padding-bottom: 5em;
+    }
+
+    section > a > article > div > img {
+        width: 3.6em;
+        height: 3.6em;
+    }
+
+    article > p {
+        max-width: 38em;
+    }
+
+    section a article .thumbnail {
+        width: 4em;
+        height: 4em;
+    }
+
+    section a article h2 {
+        font-size: 1.4em;
+    }
+
+    section a article h4 {
+        font-size: 1em;
+    }
+
+    section a article .download-button {
+        width: 4em;
+    }
+
+    .verhaal-likes {
+        font-size: 1.3em;
+    }
+
+    .verhaal-nummer {
+        margin-left: 1.5em;
+        font-size: 3em;
+        margin-top: 0em;
+    }
+
+    .verhaal-titel-likes {
+        margin-left: 5.5em;
+    }
+
+}
+
+
+/*FOOTER*/
+
+footer {
+    margin: 0 auto;
+    padding: 2em;
+    letter-spacing: 0px;
+}
+
+.footer-buttons {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.footerlogo {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+
+footer a {
+    border-radius: 2em;
+    border: solid;
+    border-width: 2px;
+    border-color: #D3D3D3;
+    color: #D3D3D3;
+    margin: 0 auto;
+    padding: 8px 15px;
+    background-color: #FCFCFC;
+    font-weight: 100;
+}
+
+.footer-button-top {
+    border-radius: 2em;
+    border: solid;
+    border-width: 2px;
+    border-color: #D3D3D3;
+    color: #D3D3D3;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    background-color: #FCFCFC;
+    font-weight: 100;
+}
+
+.footer-button-home:active {
+    background-color: white;
+}
+
+.footer-button-top:active {
+    background-color: white;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    .footer-buttons {
+        max-width: 30em;
+        margin: 0 auto;
+    }
+}

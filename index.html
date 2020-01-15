@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WOW air stories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style-index.css">
+</head>
+
+<body>
+
+
+    <!--Navigatie-->
+
+    <header>
+        <nav class="knop-iconen">
+            <img src="img/language.png" alt="taal" id="taalicoon">
+            <a href="https://wowair.nl/"> <img src="img/wow-logo.jpg" alt="logo" id="wow-logo"></a>
+            <img src="img/myprofile.jpg" alt="profiel" id="my-profile">
+        </nav>
+    </header>
+
+
+    <!--Content van de pagina is opgedeeld in twee secties   -->
+
+    <main>
+        <section id="sectie-1">
+
+            <h1>WOW air verhalen</h1>
+
+            <fieldset>
+                <label>Selecteer een categorie</label>
+
+                <select name="menu1" id="menu1">
+                    <option value="overzicht.html">Populair</option>
+                    <option value="overzicht-korte-verhalen.html">Korte verhalen</option>
+                    <option value="Lange verhalen">Lange verhalen</option>
+                    <option value="Agressief">Agressief</option>
+                    <option value="Passie">Passie</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Verwarrend">Verwarrend</option>
+                    <option value="Mysterieus">Mysterieus</option>
+                    <option value="Blij">Blij</option>
+                    <option value="Poetisch">Poetisch</option>
+                </select>
+
+                <a href="overzicht.html">
+                    <p class="submit-knop">Gaan</p>
+                </a>
+
+
+                <form action="#">
+                    <label>Zoek een verhaal</label>
+                    <input type="text">
+                    <p class="submit-knop">Gaan</p>
+                </form>
+
+            </fieldset>
+
+        </section>
+
+
+        <section id="sectie-2">
+
+            <h2>Mijn verhalen</h2>
+
+            <section id="mijn-verhalen">
+                <article id="verder-lezen">
+
+                    <h3>Verder lezen</h3>
+                    <div class="afbeeldingen">
+                        <img src="img-home/thumbnail3.jpg" alt="" class="thumbnail">
+                        <a href="verhaal/verhaal.html">
+                            <img src="img-home/thumbnail4.jpg" alt="" class="thumbnail">
+                        </a>
+                        <img src="img-home/thumbnail5.jpg" alt="" class="thumbnail">
+                    </div>
+                </article>
+
+                <article class="opgeslagen">
+                    <h3>Opgeslagen</h3>
+
+                    <div class="afbeeldingen">
+                        <a href="verhaal/verhaal.html"><img src="img-home/thumbnail4.jpg" alt="" class="thumbnail"> </a>
+<!--                        <img src="img-home/kruis.png" alt="" class="kruis">-->
+                        <img src="img-home/thumbnail6.jpg" alt="" class="thumbnail">
+<!--                        <img src="img-home/kruis.png" alt="" class="kruis">-->
+                        <img src="img-home/thumbnail7.jpg" alt="" class="thumbnail">
+<!--                        <img src="img-home/kruis.png" alt="" class="kruis">-->
+                    </div>
+
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body></html>
