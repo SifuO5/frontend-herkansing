@@ -21,6 +21,10 @@
      text-decoration: none;
  }
 
+ul {
+    list-style-type:none;
+}
+
  #sectie-1 {
      background-color: #F3F3F3;
      padding-bottom: 2em;
@@ -37,7 +41,7 @@
      width: calc(100% - 3em);
  }
 
- .knop-iconen {
+nav ul{
      display: flex;
      align-content: center;
      justify-content: space-between;
@@ -51,7 +55,7 @@
          max-width: 1200px;
      }
 
-     .knop-iconen {
+     nav ul{
          width: 100%;
      }
  }
@@ -194,8 +198,6 @@
      margin-top: 0.5em;
  }
 
-
-
  h2 {
      margin-top: 5%;
  }
@@ -204,7 +206,6 @@
      transition: all .2s;
      transform: scale(1.04);
  }
-
 
  .afbeeldingen {
      display: flex;
@@ -247,13 +248,10 @@
          margin-bottom: 1em;
      }
 
-
-
      .thumbnail {
          width: 10em;
          border-radius: 5px;
      }
-
 
      .kruis {
          width: 3em;
@@ -263,6 +261,7 @@
  }
 
  /*deskotp viewport --------------------------*/
+
  @media (min-width: 1200px) {
 
      #sectie-1 {

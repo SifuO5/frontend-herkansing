@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type:none;
+}
+
 img {
     max-width: 100%;
 }
@@ -31,7 +35,7 @@ img {
 
 /*HEADER*/
 
-.knop-iconen {
+nav ul {
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -44,7 +48,7 @@ img {
 /*desktop viewport*/
 
 @media (min-width: 1200px) {
-    .knop-iconen {
+    nav ul {
         max-width: 1200px;
     }
 }
@@ -193,7 +197,7 @@ header.show-form {
 
 /*SORTING BUTOTNS*/
 
-.buttons {
+main > section > div {
     display: flex;
     align-content: space-between;
     justify-content: space-between;
@@ -203,7 +207,7 @@ header.show-form {
     padding-bottom: 2em;
 }
 
-.sort-button {
+main > section > div > a {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
     font-size: 0.8em;
@@ -214,7 +218,7 @@ header.show-form {
     border-radius: 10em;
 }
 
-.sort-button:active {
+main > section > div:active {
     background-color: #DB31BB;
 }
 
@@ -222,7 +226,7 @@ header.show-form {
 /*ipad viewport*/
 
 @media (min-width: 600px) {
-    .sort-button {
+    main > section > div {
         font-size: 1em;
     }
 }
@@ -231,7 +235,7 @@ header.show-form {
 /*desktop viewport*/
 
 @media (min-width: 1200px) {
-    .sort-button {
+    main > section > div {
         font-size: 1em;
     }
 }
@@ -328,7 +332,7 @@ section a article .download-button {
     right: 0;
 }
 
-.verhaal-nummer {
+section > a > article > div > p {
     font-size: 2em;
     position: absolute;
     margin-left: 1.9em;
@@ -392,7 +396,7 @@ section a article .download-button {
         font-size: 1.3em;
     }
 
-    .verhaal-nummer {
+    section > a > article > div > p {
         margin-left: 1.5em;
         font-size: 3em;
         margin-top: 0em;
